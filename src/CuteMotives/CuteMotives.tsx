@@ -27,7 +27,7 @@ const categories = [
   {
     title: "Fofa 🥰",
     color: "#FFABAB",
-    date: "2025-03-17",
+    date: "2025-03-03",
     image: img1,
     items: [
       "O brilho dos seus olhos me encanta.",
@@ -43,7 +43,7 @@ const categories = [
   {
     title: "Engraçada 😊",
     color: "#FFD5A1",
-    date: "2025-03-18",
+    date: "2025-03-03",
     image: img2,
     items: [
       "Sua risada contagiante.",
@@ -59,7 +59,7 @@ const categories = [
   {
     title: "Única 🌟",
     color: "#A0E7E5",
-    date: "2025-03-19",
+    date: "2025-03-03",
     image: img3,
     items: [
       "O jeito como você torna tudo mais especial.",
@@ -76,7 +76,7 @@ const categories = [
   {
     title: "Guerreira 💪",
     color: "#FFE156",
-    date: "2025-03-20",
+    date: "2025-03-03",
     image: img4,
     items: [
       "Como você nunca desiste dos seus sonhos.",
@@ -92,7 +92,7 @@ const categories = [
   {
     title: "Memórias Especiais 💖",
     color: "#CBAACB",
-    date: "2025-03-21",
+    date: "2025-03-03",
     image: img5,
     items: [
       "Nossa primeira conversa no Slowly.",
@@ -108,7 +108,7 @@ const categories = [
   {
     title: "Sonhos e Futuro 🌈",
     color: "#B9FBC0",
-    date: "2025-03-22",
+    date: "2025-03-03",
     image: img6,
     items: [
       "Como você me faz querer estar presente em cada momento especial da sua vida.",
@@ -125,8 +125,8 @@ const categories = [
 
 export default function CuteMotives() {
   const today = new Date();
-  const startDate = new Date("2025-03-17");
-  const endDate = new Date("2025-03-22");
+  const startDate = new Date("2025-03-03");
+  const endDate = new Date("2025-03-04");
   const [audio] = useState<HTMLAudioElement>(new Audio());
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [currentAudio, setCurrentAudio] = useState<string | null>(null);
