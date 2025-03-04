@@ -26,112 +26,98 @@ const theme = createTheme({
 const categories = [
   {
     title: "Fofa 🥰",
-    color: "#FFABAB", // bg-pink-300
+    color: "#FFABAB",
     date: "2025-03-17",
     image: img1,
     items: [
-      "O seu sorriso, mesmo que por foto, ilumina meu dia.",
-      "O jeito como seus olhos brilham me deixa apaixonado.",
-      "O carinho que você coloca em cada mensagem que me manda.",
-      "A forma como você se preocupa comigo, mesmo de longe.",
-      "O som da sua risada me deixa todo feliz.",
-      "Como você me faz sentir especial com suas palavras.",
-      "O jeito que você fala quando está animada.",
-      "O carinho que você transmite.",
-      "Como você me faz sentir amado todos os dias, mesmo sem estar perto.",
-      "A forma como você me faz querer te abraçar através da tela.",
+      "O brilho dos seus olhos me encanta.",
+      "O carinho que você coloca em cada mensagem.",
+      "A forma como você se preocupa comigo.",
+      "O som da sua risada me faz feliz.",
+      "Como você me faz sentir especial todos os dias.",
+      "O jeito animado como você fala das coisas que ama.",
+      "A vontade que me dá de te abraçar através da tela.",
     ],
     music: anjos,
   },
   {
     title: "Engraçada 😊",
-    color: "#FFD5A1", // bg-yellow-300
+    color: "#FFD5A1",
     date: "2025-03-18",
     image: img2,
     items: [
-      "Sua risada contagiante que me faz sorrir do outro lado da tela.",
-      "Como você sempre faz piadinhas entre nós.",
-      "Como você me manda mensagens aleatórias e engraçadas.",
-      "Seu drama em algumas situações.",
-      "O jeito que você digita quando está empolgada.",
+      "Sua risada contagiante.",
+      "As piadinhas internas que só nós entendemos.",
+      "As mensagens aleatórias e engraçadas que você manda.",
+      "Seu drama exagerado em algumas situações.",
+      "O jeito empolgado como você digita.",
       "Suas reações exageradas nos áudios.",
-      "Como você fala algumas palavras erradas.",
-      "Seu talento especial para esquecer o que ia falar no meio da frase.",
+      "Seu talento para esquecer o que ia falar no meio da frase.",
     ],
     music: epitafio,
   },
   {
     title: "Única 🌟",
-    color: "#A0E7E5", // bg-blue-200
+    color: "#A0E7E5",
     date: "2025-03-19",
     image: img3,
     items: [
-      "O jeito como você faz tudo parecer mais especial.",
-      "Seu coração gigante que eu admiro tanto.",
-      "Como você sempre me entende sem eu precisar falar muito.",
-      "Sua criatividade para deixar nossa conversa divertida.",
-      "A forma como você me faz sentir perto, mesmo estando longe.",
-      "Como você sempre quer me ver feliz.",
+      "O jeito como você torna tudo mais especial.",
+      "Seu coração gigante.",
+      "Como você sempre me entende sem que eu fale muito.",
+      "Sua criatividade para deixar qualquer momento divertido.",
+      "A forma como você me faz sentir perto, mesmo de longe.",
       "Sua paciência (ou falta dela, mas eu amo mesmo assim kkkkk).",
-      "O brilho que você traz para a minha vida, mesmo pela tela.",
-      "Seu jeito autêntico e sincero, que me faz confiar em você.",
-      "Como você me inspira a ser uma pessoa melhor.",
+      "Seu jeito autêntico e sincero.",
+      "Como você me inspira a ser alguém melhor.",
     ],
     music: ipanema,
   },
   {
     title: "Guerreira 💪",
-    color: "#FFE156", // bg-yellow-100
+    color: "#FFE156",
     date: "2025-03-20",
     image: img4,
     items: [
-      "A forma como você nunca desiste, mesmo diante dos desafios.",
-      "Seu empenho em buscar seus objetivos, não importa o quão difíceis sejam.",
-      "A coragem que você tem para enfrentar qualquer obstáculo.",
-      "Como você transforma dificuldades em oportunidades de crescimento.",
-      "Sua determinação em seguir em frente, mesmo quando tudo parece difícil.",
-      "A força que você demonstra todos os dias, inspirando quem está ao seu redor.",
-      "O jeito como você luta pelos seus sonhos, sem medo de errar.",
-      "Sua resiliência, que mostra o quanto você é capaz de superar qualquer coisa.",
-      "A forma como você encara a vida com coragem e otimismo.",
-      "Como você me inspira a ser mais forte e determinado também.",
+      "Como você nunca desiste dos seus sonhos.",
+      "Sua coragem para enfrentar qualquer obstáculo.",
+      "Sua determinação em seguir em frente.",
+      "A força que você demonstra todos os dias.",
+      "O jeito como você transforma dificuldades em crescimento.",
+      "Sua resiliência incrível.",
+      "Como você me inspira a ser mais forte.",
     ],
     music: ceuAzul,
   },
   {
     title: "Memórias Especiais 💖",
-    color: "#CBAACB", // bg-purple-200
+    color: "#CBAACB",
     date: "2025-03-21",
     image: img5,
     items: [
-      "A primeira vez que conversamos lá pelo Slowly.",
-      "Nossa primeira risada juntos, mesmo por mensagem.",
-      "Todas as vezes que ficamos conversando até tarde.",
+      "Nossa primeira conversa no Slowly.",
+      "A primeira vez que rimos juntos.",
+      "As vezes que ficamos conversando até tarde.",
       "Quando percebemos quantas coisas temos em comum.",
-      "O dia em que você me fez sentir especial de um jeito novo.",
-      "Cada vez que você me manda um 'bom diaaa 🌼' e melhora meu dia inteiro.",
-      "O dia em que você me fez chorar de tanto rir.",
-      "Todos os momentos em que você me faz sentir querido.",
+      "Cada 'bom diaaa 🌼' que melhora meu dia inteiro.",
+      "Sempre que me fez chorar de tanto rir.",
       "O simples fato de ter você na minha vida já é especial ❤.",
     ],
     music: oceano,
   },
   {
     title: "Sonhos e Futuro 🌈",
-    color: "#B9FBC0", // bg-green-100
+    color: "#B9FBC0",
     date: "2025-03-22",
     image: img6,
     items: [
-      "Como você me faz querer estar ao seu lado para ver todos os seus sonhos se realizarem.",
+      "Como você me faz querer estar presente em cada momento especial da sua vida.",
+      "Como você me faz querer estar ao seu lado para ver seus sonhos se realizarem.",
       "A forma como você me inspira a sonhar mais alto.",
       "O jeito como você me faz acreditar que podemos conquistar qualquer coisa juntos.",
-      "Como você me faz querer construir um futuro ao seu lado.",
-      "A forma como você me faz imaginar um futuro cheio de conquistas e felicidade.",
-      "Como você me faz querer ser parte de cada vitória sua.",
+      "Como você me faz imaginar um futuro cheio de felicidade.",
       "O jeito como você me faz acreditar que podemos superar qualquer desafio juntos.",
-      "Como você me faz querer estar presente em cada momento especial da sua vida.",
       "A forma como você me faz sonhar com um futuro cheio de amor e realizações.",
-      "Como você me faz querer ser a pessoa que te apoia em cada passo rumo aos seus sonhos.",
     ],
     music: euAmoVoce,
   },
@@ -141,9 +127,9 @@ export default function CuteMotives() {
   const today = new Date();
   const startDate = new Date("2025-03-17");
   const endDate = new Date("2025-03-22");
-  const [audio] = useState(new Audio());
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [currentAudio, setCurrentAudio] = useState(null);
+  const [audio] = useState<HTMLAudioElement>(new Audio());
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const [currentAudio, setCurrentAudio] = useState<string | null>(null);
 
   let message = "";
   if (today < startDate) message = "Calma ai, curiosa! Cartões disponíveis a partir de 17 de março de 2025.";
@@ -152,7 +138,7 @@ export default function CuteMotives() {
 
   const filteredCategories = categories.filter((category) => new Date(category.date) <= today);
 
-  const playSound = (sound) => {
+  const playSound = (sound: string) => {
     if (currentAudio === sound) {
       if (isPlaying) {
         audio.pause();
