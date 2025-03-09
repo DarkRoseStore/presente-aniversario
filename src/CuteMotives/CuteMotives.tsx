@@ -19,7 +19,7 @@ import img6 from '../assets/images/img6.jpg';
 
 const theme = createTheme({
   typography: {
-    fontFamily: "'Poppins', sans-serif",
+    fontFamily: "'Dancing Script', cursive", // Fonte mais chamativa
   },
 });
 
@@ -27,7 +27,7 @@ const categories = [
   {
     title: "Fofa 🥰",
     color: "#FFABAB",
-    date: "2025-03-17",
+    date: "2025-03-16",
     image: img1,
     items: [
       "O brilho dos seus olhos me encanta.",
@@ -43,7 +43,7 @@ const categories = [
   {
     title: "Engraçada 😊",
     color: "#FFD5A1",
-    date: "2025-03-18",
+    date: "2025-03-17",
     image: img2,
     items: [
       "Sua risada contagiante.",
@@ -59,7 +59,7 @@ const categories = [
   {
     title: "Única 🌟",
     color: "#A0E7E5",
-    date: "2025-03-19",
+    date: "2025-03-18",
     image: img3,
     items: [
       "O jeito como você torna tudo mais especial.",
@@ -76,7 +76,7 @@ const categories = [
   {
     title: "Guerreira 💪",
     color: "#FFE156",
-    date: "2025-03-20",
+    date: "2025-03-19",
     image: img4,
     items: [
       "Como você nunca desiste dos seus sonhos.",
@@ -92,7 +92,7 @@ const categories = [
   {
     title: "Memórias Especiais 💖",
     color: "#CBAACB",
-    date: "2025-03-21",
+    date: "2025-03-20",
     image: img5,
     items: [
       "Nossa primeira conversa no Slowly.",
@@ -108,7 +108,7 @@ const categories = [
   {
     title: "Sonhos e Futuro 🌈",
     color: "#B9FBC0",
-    date: "2025-03-22",
+    date: "2025-03-21",
     image: img6,
     items: [
       "Como você me faz querer estar presente em cada momento especial da sua vida.",
@@ -121,24 +121,36 @@ const categories = [
     ],
     music: euAmoVoce,
   },
+  {
+    title: "Especial ❤️",
+    color: "#FFABAB",
+    date: "2025-03-22",
+    image: img1,
+    items: [
+      "Feliz aniversáio Ériquinha, muito feliz de ainda ser seu amigo, desculpa as vezes que te irrito, eu sei que mandei mal e to tentando me redimir. Desejo tanto que vc consiga completar todos seus sonhos, e quero estar junto com vc pra poder comemorar e ver sua alegria e seu rostinho de felicidade. Tudo de bom pra vc e sua familia, vc merece 🌹",
+    ],
+    music: null,
+  },
 ];
 
 export default function CuteMotives() {
   const today = new Date();
-  const startDate = new Date("2025-03-17");
+  const startDate = new Date("2025-03-16");
   const endDate = new Date("2025-03-22");
   const [audio] = useState<HTMLAudioElement>(new Audio());
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [currentAudio, setCurrentAudio] = useState<string | null>(null);
 
   let message = "";
-  if (today < startDate) message = "Calma ai, curiosa! Cartões disponíveis a partir de 17 de março de 2025.";
+  if (today < startDate) message = "Calma ai, curiosa! Cartões disponíveis a partir de 16 de março de 2025.";
   else if (today >= startDate && today < endDate) message = "Volte amanhã para ver os novos cards.";
   else if (today >= endDate) message = "Os cards chegaram ao fim, feliz aniversário, te amo Ériquinha 🥰";
 
   const filteredCategories = categories.filter((category) => new Date(category.date) <= today);
 
-  const playSound = (sound: string) => {
+  const playSound = (sound: string | null) => {
+    if (!sound) return;
+
     if (currentAudio === sound) {
       if (isPlaying) {
         audio.pause();
@@ -175,7 +187,7 @@ export default function CuteMotives() {
               style={{ marginBottom: "24px", cursor: "pointer" }}
             >
               <Card sx={{ backgroundColor: category.color, boxShadow: 3, borderRadius: 2 }}>
-              <CardMedia component="img" height="140"  sx={{ objectFit: "cover" }}  image={category.image} alt={category.title} />
+                <CardMedia component="img" height="140" sx={{ objectFit: "cover" }} image={category.image} alt={category.title} />
                 <CardContent>
                   <Typography variant="h6" component="h2" color="#4A4A4A" gutterBottom textAlign="center">
                     {category.title}
@@ -185,13 +197,45 @@ export default function CuteMotives() {
                       <li key={idx} style={{ marginBottom: "8px", fontSize: "14px" }}>{item}</li>
                     ))}
                   </ul>
-                  {category.music && (
-                    <div style={{ textAlign: "center", marginTop: "10px" }}>
+                  {category.music ? (
+                    <div style={{ textAlign: "center", marginTop: "20px" }}>
                       {isPlaying && currentAudio === category.music ? (
-                        <span onClick={() => playSound(category.music)}>⏸️ Pause Music</span>
+                        <span
+                          onClick={() => playSound(category.music)}
+                          style={{
+                            fontFamily: "'Pacifico', cursive", // Fonte chamativa
+                            color: "#FF5252", // Cor vermelha para pausado
+                            cursor: "pointer",
+                            fontSize: "18px",
+                          }}
+                        >
+                          ⏸️ Pausar Música
+                        </span>
                       ) : (
-                        <span onClick={() => playSound(category.music)}>▶️ Play Music</span>
+                        <span
+                          onClick={() => playSound(category.music)}
+                          style={{
+                            fontFamily: "'Pacifico', cursive", // Fonte chamativa
+                            color: "#4CAF50", // Cor verde para tocar
+                            cursor: "pointer",
+                            fontSize: "18px",
+                          }}
+                        >
+                          ▶️ Tocar Música
+                        </span>
                       )}
+                    </div>
+                  ) : (
+                    <div style={{ textAlign: "center", marginTop: "20px" }}>
+                      <span
+                        style={{
+                          fontFamily: "'Pacifico', cursive", // Fonte chamativa
+                          color: "#E91E63", // Cor rosa para o texto especial
+                          fontSize: "18px",
+                        }}
+                      >
+                        Sem Música Hoje, Meu Som Favorito é sua Voz ❤️
+                      </span>
                     </div>
                   )}
                 </CardContent>
