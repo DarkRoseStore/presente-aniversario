@@ -16,10 +16,11 @@ import img3 from '../assets/images/img3.jpg';
 import img4 from '../assets/images/img4.jpg';
 import img5 from '../assets/images/img5.jpg';
 import img6 from '../assets/images/img6.jpg';
+import img7 from '../assets/images/img7.avif';
 
 const theme = createTheme({
   typography: {
-    fontFamily: "'Dancing Script', cursive", // Fonte mais chamativa
+    fontFamily: "'Dancing Script', cursive", 
   },
 });
 
@@ -125,7 +126,7 @@ const categories = [
     title: "Especial ❤️",
     color: "#FFABAB",
     date: "2025-03-22",
-    image: img1,
+    image: img7,
     items: [
       "Feliz aniversáio Ériquinha, muito feliz de ainda ser seu amigo, desculpa as vezes que te irrito, eu sei que mandei mal e to tentando me redimir. Desejo tanto que vc consiga completar todos seus sonhos, e quero estar junto com vc pra poder comemorar e ver sua alegria e seu rostinho de felicidade. Tudo de bom pra vc e sua familia, vc merece 🌹",
     ],
