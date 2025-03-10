@@ -20,7 +20,7 @@ import img7 from '../assets/images/img7.avif';
 
 const theme = createTheme({
   typography: {
-    fontFamily: "'Dancing Script', cursive", 
+    fontFamily: "'Poppins', sans-serif", 
   },
 });
 
@@ -170,8 +170,17 @@ export default function CuteMotives() {
   return (
     <ThemeProvider theme={theme}>
       <div style={{ minHeight: "100vh", backgroundColor: "#FCE4EC", display: "flex", flexDirection: "column", alignItems: "center", padding: "20px", overflowX: "hidden", position: "relative" }}>
-
-        <Typography variant="h4" component="h1" color="black" gutterBottom style={{ fontWeight: "bold", textAlign: "center" }}>
+        <Typography
+          variant="h4"
+          component="h1"
+          color="black"
+          gutterBottom
+          style={{
+            fontWeight: "bold",
+            textAlign: "center",
+            fontFamily: "'Dancing Script', cursive", 
+          }}
+        >
           💖 Motivos Que Te Fazem Especial 💖
         </Typography>
 
@@ -204,8 +213,8 @@ export default function CuteMotives() {
                         <span
                           onClick={() => playSound(category.music)}
                           style={{
-                            fontFamily: "'Pacifico', cursive", // Fonte chamativa
-                            color: "#FF5252", // Cor vermelha para pausado
+                            fontFamily: "'Pacifico', cursive", 
+                            color: "#FF5252", 
                             cursor: "pointer",
                             fontSize: "18px",
                           }}
@@ -216,8 +225,8 @@ export default function CuteMotives() {
                         <span
                           onClick={() => playSound(category.music)}
                           style={{
-                            fontFamily: "'Pacifico', cursive", // Fonte chamativa
-                            color: "#4CAF50", // Cor verde para tocar
+                            fontFamily: "'Pacifico', cursive", 
+                            color: "#4CAF50",
                             cursor: "pointer",
                             fontSize: "18px",
                           }}
@@ -230,8 +239,8 @@ export default function CuteMotives() {
                     <div style={{ textAlign: "center", marginTop: "20px" }}>
                       <span
                         style={{
-                          fontFamily: "'Pacifico', cursive", // Fonte chamativa
-                          color: "#E91E63", // Cor rosa para o texto especial
+                          fontFamily: "'Pacifico', cursive", 
+                          color: "#E91E63", 
                           fontSize: "18px",
                         }}
                       >
