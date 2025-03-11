@@ -213,7 +213,6 @@ export default function CuteMotives() {
                         <span
                           onClick={() => playSound(category.music)}
                           style={{
-                            fontFamily: "'Pacifico', cursive", 
                             color: "#FF5252", 
                             cursor: "pointer",
                             fontSize: "18px",
@@ -225,7 +224,6 @@ export default function CuteMotives() {
                         <span
                           onClick={() => playSound(category.music)}
                           style={{
-                            fontFamily: "'Pacifico', cursive", 
                             color: "#4CAF50",
                             cursor: "pointer",
                             fontSize: "18px",
@@ -239,7 +237,6 @@ export default function CuteMotives() {
                     <div style={{ textAlign: "center", marginTop: "20px" }}>
                       <span
                         style={{
-                          fontFamily: "'Pacifico', cursive", 
                           color: "#E91E63", 
                           fontSize: "18px",
                         }}
