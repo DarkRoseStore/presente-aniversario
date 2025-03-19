@@ -17,6 +17,7 @@ import img4 from '../assets/images/img4.jpg';
 import img5 from '../assets/images/img5.jpg';
 import img6 from '../assets/images/img6.jpg';
 import img7 from '../assets/images/img7.avif';
+import img8 from '../assets/images/img8.jpeg';
 
 const theme = createTheme({
   typography: {
@@ -123,14 +124,15 @@ const categories = [
     music: euAmoVoce,
   },
   {
-    title: "Especial ❤️",
+    title: "Parabéns ❤️",
     color: "#FFABAB",
-    date: "2025-03-22",
+    date: "2025-03-03",
     image: img7,
     items: [
-      "Feliz aniversáio Ériquinha, muito feliz de ainda ser seu amigo, desculpa as vezes que te irrito, eu sei que mandei mal e to tentando me redimir. Desejo tanto que vc consiga completar todos seus sonhos, e quero estar junto com vc pra poder comemorar e ver sua alegria e seu rostinho de felicidade. Tudo de bom pra vc e sua familia, vc merece 🌹",
+      "Feliz aniversáio Ériquinhaaaaaa, muito feliz de ainda ser seu amigo, desculpa as vezes que te irrito, eu sei que mandei mal e to tentando me redimir. Desejo tanto que vc consiga completar todos seus sonhos, e quero estar junto com vc pra poder comemorar e ver sua alegria e seu rostinho de felicidade. Tudo de bom pra vc e sua familia, vc merece 🌹",
     ],
     music: null,
+    extraImage: img8,
   },
 ];
 
@@ -207,6 +209,15 @@ export default function CuteMotives() {
                       <li key={idx} style={{ marginBottom: "8px", fontSize: "14px" }}>{item}</li>
                     ))}
                   </ul>
+                  {category.extraImage && ( // Renderiza a imagem extra se existir
+                    <div style={{ marginTop: "16px", textAlign: "center" }}>
+                      <img
+                        src={category.extraImage}
+                        alt="Imagem extra"
+                        style={{ maxWidth: "100%", borderRadius: "8px" }}
+                      />
+                    </div>
+                  )}
                   {category.music ? (
                     <div style={{ textAlign: "center", marginTop: "20px" }}>
                       {isPlaying && currentAudio === category.music ? (
