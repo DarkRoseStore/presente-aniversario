@@ -126,7 +126,7 @@ const categories = [
   {
     title: "Parabéns ❤️",
     color: "#FFABAB",
-    date: "2025-03-03",
+    date: "2025-03-22",
     image: img7,
     items: [
       "Feliz aniversáio Ériquinhaaaaaa, muito feliz de ainda ser seu amigo, desculpa as vezes que te irrito, eu sei que mandei mal e to tentando me redimir. Desejo tanto que vc consiga completar todos seus sonhos, e quero estar junto com vc pra poder comemorar e ver sua alegria e seu rostinho de felicidade. Tudo de bom pra vc e sua familia, vc merece 🌹",
